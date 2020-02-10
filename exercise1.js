@@ -1,13 +1,15 @@
 function angkaPrima(angka) {
-    if (angka > 0 && angka < 4) {
-        return true;
+    if (angka <= 1) {
+        return false;
     }
     else {
-        if (angka % 2 == 0 || angka % 3 == 0) {
-            return false;
-        }
-        else {
-            return true;
+        for (var i = 2; i <= angka; i++) {
+            if (i != angka && angka % i == 0) {
+                return false;
+            }
+            else if (i == angka && angka % i == 0) {
+                return true;
+            }
         }
     }
   }
