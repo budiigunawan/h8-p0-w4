@@ -4,7 +4,11 @@ function ubahHuruf(kata) {
 
     for (var i = 0; i < kata.length; i++) {
         for (var j = 0; j < huruf.length; j++) {
-            if (kata[i] === huruf[j]) {
+            if (kata[i] === 'z') {
+                hasil += 'a'
+                break;
+            }
+            else if (kata[i] === huruf[j]) {
                 hasil += huruf[j+1];
             }
         }
