@@ -6,7 +6,7 @@ function urutkanAbjad(str) {
         arr.push(str[i]);
     }
 
-    ///sort descending arr
+    ///sort ascending arr
     for (var a = 1; a < arr.length; a++) {
         for (var b = 0; b < a; b++) {
             if (arr[a] < arr[b]) {
